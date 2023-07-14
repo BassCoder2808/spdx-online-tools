@@ -35,6 +35,7 @@ class License(models.Model):
     userEmail = models.EmailField(max_length=35)
     notes = models.CharField(max_length=255, default="")
     xml = models.TextField()
+    isException = models.BooleanField(default=True)
     archive = models.BooleanField(default=False)
 
     class Meta:
