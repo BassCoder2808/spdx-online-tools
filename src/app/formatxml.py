@@ -62,6 +62,11 @@ ATTRS_SEQ = {
             'name',
             'listVersionAdded',
         ],
+        'exception': [
+            'licenseId',
+            'name',
+            'listVersionAdded',
+        ],
         'alt': [
             'name',
             'match',
@@ -255,3 +260,4 @@ if __name__ == '__main__':
         except et.ParseError as e:
             logger.error('XML Parse Error: ' + str(e))
             print(('XML Parse Error: ' + str(e)))
+            
